@@ -21,8 +21,8 @@ def vgg_preprocess(x):
 
 class VGG16(object):
 
-    def __init__(self, pretrained_weight_path=None):
-        self._get_original_vgg16()
+    def __init__(self, drop=0., pretrained_weight_path=None):
+        self._get_original_vgg16(drop)
 
         if pretrained_weight_path:
             self.fine_tune()
@@ -36,10 +36,11 @@ class VGG16(object):
                                          activation='relu', border_mode='same'))
         self.model.add(MaxPooling2D((2, 2)))
 
-    def _fc_block(self):
+    def _fc_block(self, drop):
         self.model.add(Dense(4096, activation='relu'))
+        self.model.add(Dropout(drop))
 
-    def _get_original_vgg16(self):
+    def _get_original_vgg16(self, drop):
         self.model = Sequential()
 
         self.model.add(Lambda(vgg_preprocess, input_shape=(
@@ -53,8 +54,8 @@ class VGG16(object):
 
         self.model.add(Flatten())
 
-        self._fc_block()
-        self._fc_block()
+        self._fc_block(drop)
+        self._fc_block(drop)
 
         self.model.add(Dense(1000, activation='relu'))
 
