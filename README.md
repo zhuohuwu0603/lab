@@ -1,2 +1,2 @@
 # lab
-keep cooking
+> Learning whatever I want!
