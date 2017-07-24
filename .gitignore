@@ -1,5 +1,6 @@
 data
 *.h5
+.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -90,3 +91,5 @@ ENV/
 
 # Rope project settings
 .ropeproject
+.DS_Store
+kaggle/.DS_Store
