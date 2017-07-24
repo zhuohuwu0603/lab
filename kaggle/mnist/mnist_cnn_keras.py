@@ -109,4 +109,4 @@ print('test loss = {}'.format(test_loss))
 print('test accuracy = {}'.format(test_accuracy))
 
 
-# python mnist_cnn_keras.py --gpu 0 --lr 1e-4 --dropout 0.2 --epoch 10
+# python ./kaggle/mnist/mnist_cnn_keras.py --lr 1e-4 --dropout 0.2 --epoch 10 --gpu 0
