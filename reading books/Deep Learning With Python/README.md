@@ -1,5 +1,6 @@
-# Notes and codes from reading [this book](https://www.manning.com/books/deep-learning-with-python)
+> notes and codes from reading [this book](https://www.manning.com/books/deep-learning-with-python)
 
+# Notes
 ## ch1 What is deep learning?
 * derive useful input representation that gets us closer to the expected outupt
 * automatically find such transformation that turns data into more useful representation for a given task

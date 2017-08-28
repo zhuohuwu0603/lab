@@ -1,0 +1,1 @@
+> note for reading book [Effective Python](http://www.effectivepython.com/)
