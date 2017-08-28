@@ -1,1 +1,1 @@
-> note for reading book [Effective Python](http://www.effectivepython.com/)
+> notebooks for reading book [Effective Python](http://www.effectivepython.com/)
